@@ -1,0 +1,39 @@
+.emptySpace {
+    flex-grow: 1;
+}
+
+.content {
+    width: 75%;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+        .greenBar {
+            flex-grow: 1;
+            background-color: $lghWaterGreen;
+            height: 3px;
+            margin-left: 20px;
+        }
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+        .card {
+            flex-basis: 50%;
+            display: flex;
+            padding: 50px 0;
+                .roundImgBox {
+                    margin-right: 10px;
+                        .redSpot {
+                            background-color: $red;
+                            border-radius: 50%;
+                            padding: 10px;
+                        }
+                }
+                .textBox {
+                    width: 250px;
+                }
+        }
+}
