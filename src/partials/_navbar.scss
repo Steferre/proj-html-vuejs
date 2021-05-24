@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+}
+
+.logoBox {
+    display: flex;
+    width: 10%;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+}
+
+.emptySpace {
+    flex-grow: 1;
+}
+
+.linksList {
+    ul {
+        list-style: none;
+        display: flex;
+            li {
+                padding: 20px 15px 0 5px;
+                    a {
+                        text-decoration: none;
+                        color: $whiteB0;
+                        font-size: 12px;
+                    }
+            }
+    }
+}

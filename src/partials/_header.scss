@@ -1,0 +1,62 @@
+header {
+    background: linear-gradient(
+        to right,
+        $darkBlue 0%,
+        $darkBlue 31%,
+        $red 31%,
+        $red 100%
+        );
+}
+
+.titleBox {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 50px 0;
+        .subTitle {
+            display: flex;
+            align-items: flex-end;
+                .greenBar {
+                    width: 30px;
+                    height: 3px;
+                    margin-right: 15px;
+                    background-color: $waterGreen;
+                }
+                .txtSubTitle {
+                    font-size: 10px;
+                    color: $white;
+                }
+        }
+        .mainTitle {
+            margin: 10px 0 20px 0;
+                h1 {
+                    font-size: 46px;
+                    line-height: 40px;
+                    color: $white;
+                }
+        }
+        .btnBox {
+            display: flex;
+            align-items: flex-end;
+                .btnStyle {
+                    padding: 10px 20px;
+                    background-color: $lghWaterGreen;
+                    color: $txtDarkGray;
+                    border: none;
+                    font-size: 10px;
+                }
+                .playBox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 15px;
+                    padding: 10px;
+                    border: 1px solid $white;
+                    border-radius: 50%;
+                        i {
+                            font-size: 8px;
+                            color: $lghWaterGreen;
+                        }
+                }
+        }
+}
