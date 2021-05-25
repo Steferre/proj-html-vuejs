@@ -150,3 +150,266 @@ header {
 .cardsContainer .card .textBox {
   width: 250px;
 }
+
+.secondSct {
+  background-color: #1F1E38;
+}
+
+.bgImageBox {
+  /*background: url('images/business-people-working-together-on-project-and-5FHSKBL.jpg');*/
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+}
+
+.horSpace {
+  margin-left: 30px;
+}
+
+.horSpace p {
+  color: white;
+  font-size: 12px;
+}
+
+h2 {
+  color: white;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  background-color: #35FFBF;
+  width: 90%;
+}
+
+.bottoneRosso {
+  position: absolute;
+  background-color: red;
+  color: white;
+  bottom: 0;
+  right: 0;
+  border: none;
+  padding: 10px 20px;
+}
+
+.customPadding {
+  padding: 70px 100px;
+}
+
+.thirdSct {
+  background-color: #1F1E38;
+  padding-bottom: 50px;
+}
+
+.wrapVertical {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  color: white;
+}
+
+.photosBox {
+  display: flex;
+  position: relative;
+}
+
+.photo {
+  flex-basis: calc(100% / 3);
+  padding: 0 5px;
+}
+
+.photo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.arrowsBox {
+  display: flex;
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+
+.arrowBg {
+  background-color: white;
+  padding: 15px;
+}
+
+.arrowBg:first-of-type {
+  margin-right: 15px;
+}
+
+.fourthSct {
+  background-color: #1F1E38;
+  align-items: flex-end;
+}
+
+.end {
+  width: 100%;
+  align-items: flex-end;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.center {
+  margin-right: 585px;
+}
+
+.customWidth {
+  width: 325px;
+}
+
+.white {
+  background-color: white;
+}
+
+.fifthSct {
+  background-color: #1F1E38;
+  padding-bottom: 80px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.customStyle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doubleImgBox {
+  display: flex;
+  justify-content: space-between;
+}
+.doubleImgBox .imgBox {
+  flex-basis: 49%;
+  position: relative;
+}
+.doubleImgBox .imgBox img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.doubleImgBox .imgBox .whiteTxtBox {
+  position: absolute;
+  width: 80%;
+  background-color: #FFFFFF;
+  padding: 25px 60px;
+  bottom: -40px;
+  right: 0;
+}
+.doubleImgBox .imgBox .whiteTxtBox span {
+  color: #F81D39;
+}
+.doubleImgBox .imgBox .whiteTxtBox .name {
+  margin-left: 30px;
+}
+.doubleImgBox .imgBox .whiteTxtBox h3 {
+  color: #888888;
+}
+.doubleImgBox .imgBox .whiteTxtBox p {
+  font-size: 12px;
+}
+
+.bgImgBox {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.bgImgBox img {
+  width: 100%;
+}
+.bgImgBox .box {
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background-color: #1F1E38;
+  padding: 30px 0 20px;
+  position: relative;
+}
+
+.topFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #3D3D3D;
+}
+.topFooter img {
+  width: 100px;
+}
+
+.socialLinksList ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.socialLinksList ul li {
+  padding: 10px;
+}
+.socialLinksList ul li a {
+  color: #FFFFFF;
+}
+
+.bottomFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.bottomFooter .privacy {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.bottomFooter .privacy a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.bottomFooter .copyright {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.bottomFooter .copyright a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.magicBtnBox {
+  position: absolute;
+  bottom: 50px;
+  right: 95px;
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.magicBtnBox .roundBtnUp {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+.magicBtnBox .roundBtnUp a i {
+  font-size: 12px;
+}
+.magicBtnBox .question {
+  background-color: #527CEB;
+  border-radius: 50%;
+  padding: 15px;
+}
+.magicBtnBox .question i {
+  font-size: 20px;
+  color: #FFFFFF;
+}

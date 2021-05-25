@@ -1,0 +1,36 @@
+.thirdSct {
+    background-color: #1F1E38;
+    padding-bottom: 50px;
+  }
+  .wrapVertical {
+    display: flex;
+    flex-direction: column;
+  }
+  h3 {
+    color: white;
+  }
+  .photosBox {
+    display: flex;
+    position: relative;
+  }
+  .photo {
+    flex-basis: calc(100% / 3);
+    padding: 0 5px;
+  }
+  .photo img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .arrowsBox {
+    display: flex;
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+  .arrowBg {
+    background-color: white;
+    padding: 15px;
+  }
+  .arrowBg:first-of-type {
+    margin-right: 15px;
+  }

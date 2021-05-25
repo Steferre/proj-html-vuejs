@@ -1,0 +1,37 @@
+.secondSct {
+    background-color: #1F1E38;
+  }
+  .bgImageBox {
+    /*background: url('images/business-people-working-together-on-project-and-5FHSKBL.jpg');*/
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+  }
+  .horSpace {
+    margin-left: 30px;
+  }
+  .horSpace p {
+    color: white;
+    font-size: 12px;
+  }
+  h2 {
+    color: white;
+  }
+  .banner {
+    position: relative;
+    display: flex;
+    background-color: #35FFBF;
+    width: 90%;
+  }
+  .bottoneRosso {
+    position: absolute;
+    background-color: red;
+    color: white;
+    bottom: 0;
+    right: 0;
+    border: none;
+    padding: 10px 20px;
+  }
+  .customPadding {
+    padding: 70px 100px;
+  }
