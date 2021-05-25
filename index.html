@@ -262,20 +262,20 @@
                      <div class="linksList liFooterCustom">
                          <!--per il momento fatta cosi ma poi verra fatta con vue js-->
                          <ul>
-                             <li><a href="#">HOME</a></li>
-                             <li><a href="#">ABOUT</a></li>
+                             <li v-for="link in linksList"><a href="#">{{ link.text }}</a></li>
+                             <!-- <li><a href="#">ABOUT</a></li>
                              <li><a href="#">PROJECT</a></li>
                              <li><a href="#">SERVICES</a></li>
                              <li><a href="#">BLOG</a></li>
-                             <li><a href="#">CONTACT</a></li>
+                             <li><a href="#">CONTACT</a></li> -->
                          </ul>
                      </div>
                      <div class="socialLinksList">
                          <ul>
-                             <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                             <li v-for="social in socialsList"><a href="#"><i class="fa" :class="social.class"></i></a></li>
+                             <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
                          </ul>
                      </div>
                  </div>
@@ -302,7 +302,7 @@
          </footer>
     </div>
 
-
+    <script src="scripts/data.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>
