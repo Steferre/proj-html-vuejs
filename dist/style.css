@@ -19,7 +19,6 @@ body {
 
 .wrapper {
   display: flex;
-  padding: 60px 0 80px;
 }
 
 header {
@@ -123,6 +122,9 @@ header {
   display: flex;
   align-items: center;
 }
+.titleContainer .darkBlue {
+  color: #1F1E38;
+}
 .titleContainer .greenBar {
   flex-grow: 1;
   background-color: #35FFBF;
@@ -140,15 +142,33 @@ header {
   padding: 50px 0;
 }
 .cardsContainer .card .roundImgBox {
-  margin-right: 10px;
+  margin-right: 50px;
 }
 .cardsContainer .card .roundImgBox .redSpot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #F81D39;
   border-radius: 50%;
-  padding: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+}
+.cardsContainer .card .roundImgBox .redSpot i {
+  font-size: 30px;
+}
+.cardsContainer .card .roundImgBox .rotate i {
+  transform: rotate(-25deg);
 }
 .cardsContainer .card .textBox {
   width: 250px;
+}
+.cardsContainer .card .textBox h4 {
+  color: #1F1E38;
+}
+.cardsContainer .card .textBox p {
+  color: #AAAAAA;
 }
 
 .secondSct {
@@ -161,18 +181,23 @@ header {
   width: 800px;
   height: 500px;
 }
+.bgImageBox img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .horSpace {
   margin-left: 30px;
 }
 
 .horSpace p {
-  color: white;
+  color: #AAAAAA;
   font-size: 12px;
 }
 
 h2 {
-  color: white;
+  color: #FFFFFF;
 }
 
 .banner {
@@ -181,11 +206,17 @@ h2 {
   background-color: #35FFBF;
   width: 90%;
 }
+.banner .titolo h2 {
+  color: #1F1E38;
+}
+.banner .testo p {
+  color: #888888;
+}
 
 .bottoneRosso {
   position: absolute;
-  background-color: red;
-  color: white;
+  background-color: #F81D39;
+  color: #FFFFFF;
   bottom: 0;
   right: 0;
   border: none;
@@ -207,17 +238,17 @@ h2 {
 }
 
 h3 {
-  color: white;
+  color: #FFFFFF;
 }
 
 .photosBox {
   display: flex;
   position: relative;
+  justify-content: space-between;
 }
 
 .photo {
-  flex-basis: calc(100% / 3);
-  padding: 0 5px;
+  flex-basis: calc(98% / 3);
 }
 
 .photo img {
@@ -234,8 +265,15 @@ h3 {
 }
 
 .arrowBg {
-  background-color: white;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #FFFFFF1A;
+}
+.arrowBg i {
+  color: #818A91;
 }
 
 .arrowBg:first-of-type {
@@ -257,7 +295,7 @@ h3 {
 }
 
 .center {
-  margin-right: 585px;
+  margin-right: 425px;
 }
 
 .customWidth {
@@ -265,7 +303,23 @@ h3 {
 }
 
 .white {
-  background-color: white;
+  background-color: #FFFFFF;
+}
+.white .contentBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px 30px 0;
+}
+.white .contentBox .contentCard {
+  flex-basis: calc(90% / 3);
+}
+.white .contentBox .contentCard p {
+  color: #818A91;
+  font-size: 12px;
+}
+.white .contentBox .contentCard span {
+  font-weight: bold;
+  color: #1F1E38;
 }
 
 .fifthSct {
@@ -280,6 +334,10 @@ h3 {
 .customStyle {
   display: flex;
   justify-content: space-between;
+}
+
+.black {
+  color: #000000;
 }
 
 .doubleImgBox {
@@ -310,9 +368,10 @@ h3 {
   margin-left: 30px;
 }
 .doubleImgBox .imgBox .whiteTxtBox h3 {
-  color: #888888;
+  color: #000000;
 }
 .doubleImgBox .imgBox .whiteTxtBox p {
+  color: #818A91;
   font-size: 12px;
 }
 
@@ -331,6 +390,19 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.bgImgBox .box p {
+  color: #FFFFFFB3;
+  font-size: 12px;
+  width: 250px;
+  text-align: center;
+}
+.bgImgBox .box .btnStyleBlue {
+  border: none;
+  padding: 20px 30px;
+  background-color: #1F1E38;
+  color: #FFFFFFCC;
+  margin-top: 30px;
+}
 
 footer {
   background-color: #1F1E38;
@@ -343,10 +415,15 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
-  border-bottom: 1px solid #3D3D3D;
+  border-bottom: 1px solid #888888;
 }
 .topFooter img {
   width: 100px;
+}
+
+.liFooterCustom ul li {
+  padding: 10px;
+  color: #888888;
 }
 
 .socialLinksList ul {
@@ -373,7 +450,7 @@ footer {
 }
 .bottomFooter .privacy a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #888888;
 }
 .bottomFooter .copyright {
   display: flex;
@@ -382,7 +459,7 @@ footer {
 }
 .bottomFooter .copyright a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #888888;
 }
 
 .magicBtnBox {

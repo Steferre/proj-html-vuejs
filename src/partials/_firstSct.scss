@@ -9,6 +9,9 @@
 .titleContainer {
     display: flex;
     align-items: center;
+        .darkBlue {
+            color: $darkBlue;
+        }
         .greenBar {
             flex-grow: 1;
             background-color: $lghWaterGreen;
@@ -25,15 +28,35 @@
             display: flex;
             padding: 50px 0;
                 .roundImgBox {
-                    margin-right: 10px;
+                    margin-right: 50px;
                         .redSpot {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             background-color: $red;
                             border-radius: 50%;
-                            padding: 10px;
+                            width: 50px;
+                            height: 50px;
+                            text-align: center;
+                            color: white;
+                                i {
+                                    font-size: 30px;
+                                }
+                        }
+                        .rotate {
+                            i {
+                                transform: rotate(-25deg);
+                            }
                         }
                 }
                 .textBox {
                     width: 250px;
+                        h4 {
+                            color: $darkBlue;
+                        }
+                        p {
+                            color: $txtLightGray;
+                        }
                 }
         }
 }

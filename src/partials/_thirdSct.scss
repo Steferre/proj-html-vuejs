@@ -7,15 +7,15 @@
     flex-direction: column;
   }
   h3 {
-    color: white;
+    color: $white;
   }
   .photosBox {
     display: flex;
     position: relative;
+    justify-content: space-between;
   }
   .photo {
-    flex-basis: calc(100% / 3);
-    padding: 0 5px;
+    flex-basis: calc(98% / 3);
   }
   .photo img {
     width: 100%;
@@ -28,8 +28,15 @@
     right: 0;
   }
   .arrowBg {
-    background-color: white;
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height:50px;
+    background-color: $white1A;
+      i {
+        color: $txtGray;
+      }
   }
   .arrowBg:first-of-type {
     margin-right: 15px;

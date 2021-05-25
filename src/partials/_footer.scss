@@ -9,10 +9,19 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $txtDarkGray;
         img {
             width: 100px;
         }
+}
+
+.liFooterCustom {
+    ul {
+        li {
+            padding: 10px;
+            color: $txtDarkGray;
+        }
+    }
 }
 
 .socialLinksList {
@@ -39,7 +48,7 @@ footer {
             font-size: 12px;
                 a {
                     text-decoration: none;
-                    color: $white;
+                    color: $txtDarkGray;
                 }
         }
         .copyright {
@@ -48,7 +57,7 @@ footer {
             font-size: 12px;
                 a {
                     text-decoration: none;
-                    color: $white;
+                    color: $txtDarkGray;
                 }
         }
 }
