@@ -5,10 +5,11 @@
     // background: url('/images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');
     // background-size: cover;
     width: 800px;
-    height: 500px;
+    height: 550px;
       img {
         width: 100%;
-        object-fit: contain;
+        height: 550px;
+        object-fit: cover;
       }
   }
   .horSpace {
@@ -16,7 +17,7 @@
   }
   .horSpace p {
     color: $txtLightGray;
-    font-size: 12px;
+    font-size: ($fontSizeB6 * 2);
   }
   h2 {
     color: $white;

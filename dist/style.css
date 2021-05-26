@@ -1,6 +1,7 @@
 /*bg colors*/
 /*text colors*/
 /*border colors*/
+/*h-size*/
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +28,29 @@ body {
 
 .sizeS {
   font-size: 10px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 50px;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+h3 {
+  font-size: 22.5px;
+  line-height: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
 }
 
 header {
@@ -75,15 +99,13 @@ header .rightBg img {
   background-color: #39FFBF;
 }
 .titleBox .subTitle .txtSubTitle {
-  font-size: 10px;
+  font-size: 12px;
   color: #FFFFFF;
 }
 .titleBox .mainTitle {
   margin: 10px 0 20px 0;
 }
 .titleBox .mainTitle h1 {
-  font-size: 46px;
-  line-height: 40px;
   color: #FFFFFF;
 }
 .titleBox .btnBox {
@@ -212,12 +234,13 @@ header .rightBg img {
 
 .bgImageBox {
   width: 800px;
-  height: 500px;
+  height: 550px;
 }
 .bgImageBox img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .horSpace {

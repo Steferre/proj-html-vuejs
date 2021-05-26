@@ -40,15 +40,13 @@ header {
                     background-color: $waterGreen;
                 }
                 .txtSubTitle {
-                    font-size: 10px;
+                    font-size: ($fontSizeB6 * 2);
                     color: $white;
                 }
         }
         .mainTitle {
             margin: 10px 0 20px 0;
                 h1 {
-                    font-size: 46px;
-                    line-height: 40px;
                     color: $white;
                 }
         }
@@ -60,7 +58,7 @@ header {
                     background-color: $lghWaterGreen;
                     color: $txtDarkGray;
                     border: none;
-                    font-size: 10px;
+                    font-size: $fontSizeB10;
                         &:hover {
                             background-color: $red;
                             color: $white;
@@ -76,7 +74,7 @@ header {
                     border: 1px solid $white;
                     border-radius: 50%;
                         i {
-                            font-size: 8px;
+                            font-size: ($fontSizeB10 - 2px);
                             color: $lghWaterGreen;
                         }
                 }

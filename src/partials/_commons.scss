@@ -19,9 +19,32 @@ body {
 }
 
 .sizeM {
-    font-size: 12px;
+    font-size: ($fontSizeB10 + 2px);
 }
 
 .sizeS {
-    font-size: 10px;
+    font-size: $fontSizeB10;
+}
+
+h1 {
+    font-size: ($fontSizeB10 * 6);
+    line-height: 50px;
+}
+
+h2 {
+    font-size: ($fontSizeB10 * 3.5);
+    line-height: 35px;
+}
+
+h3 {
+    font-size: ($fontSizeB10 * 2.25);
+    line-height: 25px;
+}
+
+h4 {
+    font-size: ($fontSizeB10 * 2);
+}
+
+h5 {
+    font-size: ($fontSizeB10 * 1.6);
 }
