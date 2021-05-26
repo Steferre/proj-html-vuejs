@@ -20,6 +20,28 @@
     flex-basis: calc(98% / 3);
       &:hover .layover {
         display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 10px 10px 10px;
+          .layoverTxt {
+            display: flex;
+            flex-direction: column;
+              h4 {
+                color: $white;
+              }
+              span {
+                color: $txtLightGray;
+              }
+          }
+          .plusBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            background-color: $darkBlue;
+            color: $white;
+          }
       }
       &:hover {
         border: 3px solid $darkBlue;
@@ -33,8 +55,7 @@
         width: 100%;
         height: 100%;
         display: none;
-        background-color: $darkRed;
-        opacity: 0.6;
+        background-color: $layoverRed;
         border: 3px solid transparent;
       }
   }

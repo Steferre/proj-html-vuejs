@@ -1,15 +1,29 @@
 header {
-    background: linear-gradient(
-        to right,
-        $darkBlue 0%,
-        $darkBlue 31%,
-        $red 31%,
-        $red 100%
-        );
-    /*background-image: url('../../images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');*/    
+    position: relative;
+    display: flex;
+    justify-content: center;
+        .leftBg {
+           width: 35%;
+           height: 610px;
+           background-color: $darkBlue; 
+        }
+        .rightBg {
+            width: 65%;
+                img {
+                    width: 100%;
+                    height: 610px;
+                    object-fit: cover;
+                    object-position: 10% 25%;
+                }
+        }
 }
 
-
+.containerAbsolute {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+}
 
 .titleBox {
     display: flex;
@@ -47,6 +61,11 @@ header {
                     color: $txtDarkGray;
                     border: none;
                     font-size: 10px;
+                        &:hover {
+                            background-color: $red;
+                            color: $white;
+                            border: 3px solid $darkBlue; 
+                        }
                 }
                 .playBox {
                     display: flex;

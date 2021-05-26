@@ -14,14 +14,16 @@
 <body>
     <div id="app">
         <header>
-            <div class="container">
+            <div class="leftBg"></div>
+            <div class="rightBg">
+                <img src="images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg" alt="immagine">
+            </div>
+            <div class="containerAbsolute">
                 <nav class="navbar">
                     <div class="logoBox">
                         <img src="images/logotype.png" alt="logo image">
                     </div>
-                    <div class="emptySpace"></div>
                     <div class="linksList">
-                        <!--per il momento fatta cosi ma poi verra fatta con vue js-->
                         <ul>
                             <li><a href="#">HOME</a></li>
                             <li><a href="#">ABOUT</a></li>
@@ -48,8 +50,8 @@
                     </div>
                 </div>
             </div>
-         </header>
-         <main>
+        </header> 
+        <main>
              <section class="firstSct">
                  <div class="wrapper">
                      <div class="emptySpace"></div>
@@ -149,13 +151,39 @@
                              <!--si potrebbero ciclare con vue js-->
                              <div class="photo">
                                  <img src="images/DRY-1-790x592.jpg" alt="random image">
-                                 <div class="layover"></div>
+                                 <div class="layover">
+                                    <div class="layoverTxt">
+                                        <h4>Purinky Products</h4>
+                                        <span>uncategorized</span>
+                                    </div>
+                                    <div class="plusBtn">
+                                       <i class="fa fa-plus"></i>
+                                    </div>
+                                 </div>
                              </div>
                              <div class="photo">
                                  <img src="images/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg" alt="random image">
+                                 <div class="layover">
+                                    <div class="layoverTxt">
+                                        <h4>Purinky Products</h4>
+                                        <span>uncategorized</span>
+                                    </div>
+                                    <div class="plusBtn">
+                                       <i class="fa fa-plus"></i>
+                                    </div>
+                                 </div>
                              </div>
                              <div class="photo">
                                  <img src="images/z1el4c4p-790x592.jpg" alt="random image">
+                                 <div class="layover">
+                                    <div class="layoverTxt">
+                                        <h4>Purinky Products</h4>
+                                        <span>uncategorized</span>
+                                    </div>
+                                    <div class="plusBtn">
+                                       <i class="fa fa-plus"></i>
+                                    </div>
+                                 </div>
                              </div>
                              <div class="arrowsBox">
                                  <div class="arrowBg">
@@ -183,27 +211,34 @@
                          </div>
                      </div>
                  </div>
-                 <div class="banner white">
-                     <div class="container">
-                         <div class="contentBox">
-                             <div class="contentCard">
-                                 <p>When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when I hear the buzz of the little.</p>
-                                 <span>Vera Duncan</span>
-                                 <p>Amazon Inc</p>
-                             </div>
-                             <div class="contentCard">
-                                 <p>When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when I hear the buzz of the little.</p>
-                                 <span>Vera Duncan</span>
-                                 <p>Amazon Inc</p>
-                             </div>
-                             <div class="contentCard">
-                                 <p>When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when I hear the buzz of the little.</p>
-                                 <span>Vera Duncan</span>
-                                 <p>Amazon Inc</p>
-                             </div>
-                         </div>
-                     </div>
-                 </div> 
+                <div class="banner white">
+                    <div class="bgPhoto">
+                        <div class="singlePhoto">
+                            <img src="images/oliver-ragfelt-488196-2.jpg" alt="photo">
+                            <div class="contentCard">
+                                <p class="sizeM">When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when I hear the buzz of the little.</p>
+                                <p class="subject">Vera Duncan</p>
+                                <p class="sizeS">Amazon Inc.</p>
+                            </div>
+                        </div>
+                        <div class="singlePhoto">
+                            <img src="images/oliver-ragfelt-488196-unsplash.jpg" alt="photo">
+                            <div class="contentCard">
+                                <p class="sizeM">When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when I hear the buzz of the little.</p>
+                                <p class="subject">Mark Porter</p>
+                                <p class="sizeS">Amazon Inc.</p>
+                            </div>
+                        </div>
+                        <div class="singlePhoto">
+                            <img src="images/12679.jpg" alt="photo">
+                            <div class="contentCard">
+                                <p class="sizeM">When, while lovely valley teems with vapour around meand eridian sun strikes the upper impenetrable foliage of my trees, and but a thousand unknown plants are noticed when I hear the buzz of the little.</p>
+                                <p class="subject">Paul Telby</p>
+                                <p class="sizeS">Amazon Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
              </section>
              <section class="fifthSct">
                  <div class="container">
@@ -255,8 +290,8 @@
                      </div>
                  </div>
              </section>
-         </main>
-         <footer>
+        </main>
+        <footer>
              <div class="container">
                  <div class="topFooter">
                      <img src="images/logotype-2-300x50.png" alt="logo">
@@ -300,7 +335,7 @@
                      <i class="fa fa-comment-o"></i>
                  </div>
              </div>
-         </footer>
+        </footer>
     </div>
 
     <script src="scripts/data.js"></script>

@@ -21,9 +21,41 @@ body {
   display: flex;
 }
 
+.sizeM {
+  font-size: 12px;
+}
+
+.sizeS {
+  font-size: 10px;
+}
+
 header {
-  background: linear-gradient(to right, #1F1E38 0%, #1F1E38 31%, #F81D39 31%, #F81D39 100%);
-  /*background-image: url('../../images/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg');*/
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+header .leftBg {
+  width: 35%;
+  height: 610px;
+  background-color: #1F1E38;
+}
+header .rightBg {
+  width: 65%;
+}
+header .rightBg img {
+  width: 100%;
+  height: 610px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 10% 25%;
+     object-position: 10% 25%;
+}
+
+.containerAbsolute {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 950px;
 }
 
 .titleBox {
@@ -65,6 +97,11 @@ header {
   border: none;
   font-size: 10px;
 }
+.titleBox .btnBox .btnStyle:hover {
+  background-color: #F81D39;
+  color: #FFFFFF;
+  border: 3px solid #1F1E38;
+}
 .titleBox .btnBox .playBox {
   display: flex;
   align-items: center;
@@ -80,7 +117,9 @@ header {
 }
 
 .navbar {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .logoBox {
@@ -91,10 +130,6 @@ header {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-.emptySpace {
-  flex-grow: 1;
 }
 
 .linksList ul {
@@ -202,7 +237,7 @@ h2 {
   position: relative;
   display: flex;
   background-color: #35FFBF;
-  width: 90%;
+  width: 85.4%;
 }
 .banner .titolo h2 {
   color: #1F1E38;
@@ -252,6 +287,28 @@ h3 {
 }
 .photo:hover .layover {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+}
+.photo:hover .layover .layoverTxt {
+  display: flex;
+  flex-direction: column;
+}
+.photo:hover .layover .layoverTxt h4 {
+  color: #FFFFFF;
+}
+.photo:hover .layover .layoverTxt span {
+  color: #AAAAAA;
+}
+.photo:hover .layover .plusBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #1F1E38;
+  color: #FFFFFF;
 }
 .photo:hover {
   border: 3px solid #1F1E38;
@@ -264,8 +321,7 @@ h3 {
   width: 100%;
   height: 100%;
   display: none;
-  background-color: #F00E2E;
-  opacity: 0.6;
+  background-color: #F00E2CBB;
   border: 3px solid transparent;
 }
 
@@ -318,26 +374,52 @@ h3 {
 
 .customWidth {
   width: 325px;
+  text-align: end;
 }
 
 .white {
   background-color: #FFFFFF;
 }
-.white .contentBox {
+.white .bgPhoto {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 80px 30px 0;
 }
-.white .contentBox .contentCard {
-  flex-basis: calc(90% / 3);
+.white .bgPhoto .singlePhoto {
+  position: relative;
+  display: flex;
+  flex-basis: calc(100% / 3.4);
 }
-.white .contentBox .contentCard p {
-  color: #818A91;
-  font-size: 12px;
+.white .bgPhoto .singlePhoto img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  visibility: hidden;
 }
-.white .contentBox .contentCard span {
-  font-weight: bold;
+.white .bgPhoto .singlePhoto .contentCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px 50px;
+}
+.white .bgPhoto .singlePhoto .contentCard p {
+  color: #AAAAAA;
+}
+.white .bgPhoto .singlePhoto .contentCard .subject {
   color: #1F1E38;
+  font-weight: bold;
+  margin: 30px 0 5px 0;
+}
+.white .bgPhoto .singlePhoto:hover img {
+  visibility: visible;
+}
+.white .bgPhoto .singlePhoto:hover .contentCard .subject {
+  color: #FFFFFF;
+}
+.white:hover {
+  border: 3px solid #1F1E38;
+  border-right: none;
+  background-color: #F00E2CBB;
 }
 
 .fifthSct {

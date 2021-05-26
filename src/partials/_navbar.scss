@@ -1,5 +1,7 @@
 .navbar {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .logoBox {
@@ -9,10 +11,6 @@
             width: 100%;
             object-fit: contain;
         }
-}
-
-.emptySpace {
-    flex-grow: 1;
 }
 
 .linksList {
