@@ -4,6 +4,7 @@
 
 .content {
     width: 75%;
+    padding: ($myPaddingB10 * 5) 0 ($myPaddingB10 *8);
 }
 
 .titleContainer {
@@ -16,19 +17,20 @@
             flex-grow: 1;
             background-color: $lghWaterGreen;
             height: 3px;
-            margin-left: 20px;
+            margin-left: ($myMarginB10 * 2);
         }
 }
 
 .cardsContainer {
     display: flex;
     flex-wrap: wrap;
+    padding-right: ($myPaddingB10 * 10);
         .card {
             flex-basis: 50%;
             display: flex;
-            padding: 50px 0;
+            padding: ($myPaddingB10 * 5) 0;
                 .roundImgBox {
-                    margin-right: 50px;
+                    margin-right: ($myMarginB10 * 5);
                         .redSpot {
                             display: flex;
                             justify-content: center;
@@ -50,9 +52,10 @@
                         }
                 }
                 .textBox {
-                    width: 250px;
-                        h4 {
+                    width: 315px;
+                        h5 {
                             color: $darkBlue;
+                            margin-bottom: ($myMarginB5 * 3);
                         }
                         p {
                             color: $txtLightGray;

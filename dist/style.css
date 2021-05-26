@@ -2,6 +2,7 @@
 /*text colors*/
 /*border colors*/
 /*h-size*/
+/*spacing*/
 * {
   margin: 0;
   padding: 0;
@@ -38,15 +39,18 @@ h1 {
 h2 {
   font-size: 35px;
   line-height: 35px;
+  color: #FFFFFF;
 }
 
 h3 {
   font-size: 22.5px;
   line-height: 25px;
+  color: #FFFFFF;
 }
 
 h4 {
   font-size: 20px;
+  line-height: 25px;
 }
 
 h5 {
@@ -103,7 +107,7 @@ header .rightBg img {
   color: #FFFFFF;
 }
 .titleBox .mainTitle {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 25px 0;
 }
 .titleBox .mainTitle h1 {
   color: #FFFFFF;
@@ -113,9 +117,9 @@ header .rightBg img {
   align-items: flex-end;
 }
 .titleBox .btnBox .btnStyle {
-  padding: 10px 20px;
+  padding: 12px 30px;
   background-color: #35FFBF;
-  color: #888888;
+  color: #000000E6;
   border: none;
   font-size: 10px;
 }
@@ -142,6 +146,7 @@ header .rightBg img {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .logoBox {
@@ -173,6 +178,7 @@ header .rightBg img {
 
 .content {
   width: 75%;
+  padding: 50px 0 80px;
 }
 
 .titleContainer {
@@ -192,6 +198,7 @@ header .rightBg img {
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
+  padding-right: 100px;
 }
 .cardsContainer .card {
   flex-basis: 50%;
@@ -219,10 +226,11 @@ header .rightBg img {
   transform: rotate(-25deg);
 }
 .cardsContainer .card .textBox {
-  width: 250px;
+  width: 315px;
 }
-.cardsContainer .card .textBox h4 {
+.cardsContainer .card .textBox h5 {
   color: #1F1E38;
+  margin-bottom: 15px;
 }
 .cardsContainer .card .textBox p {
   color: #AAAAAA;
@@ -244,7 +252,8 @@ header .rightBg img {
 }
 
 .horSpace {
-  margin-left: 30px;
+  margin-top: 90px;
+  margin-left: 40px;
 }
 
 .horSpace p {
@@ -252,18 +261,23 @@ header .rightBg img {
   font-size: 12px;
 }
 
-h2 {
-  color: #FFFFFF;
-}
-
 .banner {
   position: relative;
   display: flex;
+  align-items: center;
   background-color: #35FFBF;
   width: 85.4%;
 }
-.banner .titolo h2 {
+.banner .titolo {
+  flex-basis: 50%;
+  padding: 50px 160px;
+}
+.banner .titolo h3 {
   color: #1F1E38;
+}
+.banner .testo {
+  flex-basis: 50%;
+  padding: 50px 250px 50px 0;
 }
 .banner .testo p {
   color: #888888;
@@ -279,10 +293,6 @@ h2 {
   padding: 10px 20px;
 }
 
-.customPadding {
-  padding: 70px 100px;
-}
-
 .thirdSct {
   background-color: #1F1E38;
   padding-bottom: 50px;
@@ -293,8 +303,9 @@ h2 {
   flex-direction: column;
 }
 
-h3 {
-  color: #FFFFFF;
+.customSpace {
+  padding: 100px 0 0 0;
+  width: 460px;
 }
 
 .photosBox {
@@ -365,8 +376,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   background-color: #FFFFFF1A;
 }
 .arrowBg i {
@@ -385,6 +396,7 @@ h3 {
 .end {
   width: 100%;
   align-items: flex-end;
+  padding: 50px 0 10px 0;
 }
 
 .reverse {
@@ -447,7 +459,7 @@ h3 {
 
 .fifthSct {
   background-color: #1F1E38;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
 }
 
 .fullWidth {
@@ -480,8 +492,8 @@ h3 {
   position: absolute;
   width: 80%;
   background-color: #FFFFFF;
-  padding: 25px 60px;
-  bottom: -40px;
+  padding: 25px 60px 35px;
+  bottom: -60px;
   right: 0;
 }
 .doubleImgBox .imgBox .whiteTxtBox span {
@@ -490,8 +502,9 @@ h3 {
 .doubleImgBox .imgBox .whiteTxtBox .name {
   margin-left: 30px;
 }
-.doubleImgBox .imgBox .whiteTxtBox h3 {
+.doubleImgBox .imgBox .whiteTxtBox h4 {
   color: #000000;
+  margin: 10px 0 20px;
 }
 .doubleImgBox .imgBox .whiteTxtBox p {
   color: #818A91;
@@ -586,7 +599,7 @@ footer {
 }
 
 .magicBtnBox {
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   right: 95px;
   width: 90px;

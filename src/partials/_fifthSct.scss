@@ -1,6 +1,6 @@
 .fifthSct {
     background-color: $darkBlue;
-    padding-bottom: 80px;
+    padding-bottom: ($myPaddingB10 * 20);
 }
 
 .fullWidth {
@@ -30,17 +30,18 @@
                 position: absolute;
                 width: 80%;
                 background-color: $white;
-                padding: 25px 60px;
-                bottom: -40px;
+                padding: ($myPaddingB10 * 2.5) ($myPaddingB10 * 6) ($myPaddingB10 * 3.5);
+                bottom: -60px;
                 right: 0;
                     span {
                         color: $red;
                     }
                     .name {
-                        margin-left: 30px;
+                        margin-left: ($myMarginB10 * 3);
                     }
-                    h3 {
+                    h4 {
                         color: $black;
+                        margin: ($myMarginB10) 0 ($myMarginB10 * 2); 
                     }
                     p {
                         color: $txtGray;

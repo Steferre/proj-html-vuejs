@@ -19,10 +19,10 @@
                 }
                 .btnStyleBlue {
                     border: none;
-                    padding: 20px 30px;
+                    padding: ($myPaddingB10 * 2) ($myPaddingB10 * 3);
                     background-color: $darkBlue;
                     color: $whiteCC;
-                    margin-top: 30px;
+                    margin-top: ($myMarginB10 * 3);
                 }
         }
 }

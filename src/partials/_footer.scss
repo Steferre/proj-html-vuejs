@@ -1,6 +1,6 @@
 footer {
     background-color: $darkBlue;
-    padding: 30px 0 20px;
+    padding: ($myPaddingB10 * 3) 0 ($myPaddingB10 * 2);
     position: relative;
 }
 
@@ -8,7 +8,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: ($myPaddingB10 * 5) 0;
     border-bottom: 1px solid $txtDarkGray;
         img {
             width: 100px;
@@ -18,7 +18,7 @@ footer {
 .liFooterCustom {
     ul {
         li {
-            padding: 10px;
+            padding: $myPaddingB10;
             color: $txtDarkGray;
         }
     }
@@ -30,7 +30,7 @@ footer {
         list-style: none;
         justify-content: space-between;
             li {
-                padding: 10px;
+                padding: $myPaddingB10;
                     a {
                         color: $white;
                     }
@@ -41,7 +41,7 @@ footer {
 .bottomFooter {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: ($myPaddingB10 * 3) 0;
         .privacy {
             display: flex;
             flex-direction: column;
@@ -63,7 +63,7 @@ footer {
 }
 
 .magicBtnBox {
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     right: 95px;
     width: 90px;
@@ -85,7 +85,7 @@ footer {
         .question {
             background-color: $blue;
             border-radius: 50%;
-            padding: 15px;
+            padding: ($myPaddingB5 * 3);
                 i {
                     font-size: ($fontSizeB10 * 2);
                     color: $white;

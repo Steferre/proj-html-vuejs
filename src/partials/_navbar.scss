@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: ($myMarginB10 * 10);
 }
 
 .logoBox {
@@ -18,7 +19,7 @@
         list-style: none;
         display: flex;
             li {
-                padding: 20px 15px 0 5px;
+                padding: ($myPaddingB10 * 2) ($myPaddingB5 * 3) 0 $myPaddingB5;
                     a {
                         text-decoration: none;
                         color: $whiteB0;
